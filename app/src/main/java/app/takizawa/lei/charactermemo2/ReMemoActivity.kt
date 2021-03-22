@@ -15,7 +15,7 @@ class ReMemoActivity : AppCompatActivity() {
     }
 
     private val positionItems: Array<String> = arrayOf(
-        "ヒーロー（主人公）",
+        "ヒーロー1（主人公）",
         "メンター（賢者）",
         "ガーディアン（門番）",
         "ヘラルド（使者）",
