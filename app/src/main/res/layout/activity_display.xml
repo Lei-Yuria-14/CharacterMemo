@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   xmlns:tools="http://schemas.android.com/tools"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="match_parent"
+                                                   android:background="@drawable/pred_new" android:id="@+id/background">
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/nameDisText"
+            android:text="名前"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toTopOf="parent"
+            android:textSize="22sp" app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintVertical_bias="0.180" android:gravity="center" android:textColor="#000000"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/nicknameDisText"
+            android:text="ニックネーム" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintVertical_bias="0.225" app:layout_constraintHorizontal_bias="0.750"
+            android:textSize="18sp" android:gravity="start" android:textColor="#000000"/>
+    <TextView
+            android:text="年齢"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/ageDisText"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintHorizontal_bias="0.35" app:layout_constraintVertical_bias="0.285"
+            android:textSize="20sp" android:gravity="start" android:textColor="#000000"/>
+    <TextView
+            android:text="血液型"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/bloodtypeDisText"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintVertical_bias="0.455"
+            android:textSize="20sp" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintHorizontal_bias="0.600" android:gravity="start" android:textColor="#000000"/>
+    <TextView
+            android:text="誕生日"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/birthdayDisText"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintHorizontal_bias="0.55"
+            app:layout_constraintVertical_bias="0.365" android:textSize="20sp" android:gravity="start"
+            android:textColor="#000000"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/voiceDisText"
+            android:text="声優・俳優" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.730"
+            app:layout_constraintVertical_bias="0.107" android:gravity="start" android:textColor="#000000"/>
+    <TextView
+            android:text="役職"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/positionDisText"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.470" app:layout_constraintVertical_bias="0.530"
+            android:textSize="20sp" android:gravity="start" android:textColor="#000000"/>
+    <TextView
+            android:text="職業"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/jobDisText"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" android:textSize="20sp"
+            app:layout_constraintHorizontal_bias="0.361" app:layout_constraintVertical_bias="0.610"
+            android:gravity="start" android:textColor="#000000"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/heightDisText" android:text="身長"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.684" app:layout_constraintVertical_bias="0.692"
+            android:textSize="20sp" android:gravity="start" android:textColor="#000000"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/weightDisText"
+            android:text="体重" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintHorizontal_bias="0.684"
+            app:layout_constraintVertical_bias="0.765" android:textSize="20sp" android:gravity="start"
+            android:textColor="#000000"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/remarkDisText" android:text="発言"
+            android:textSize="18sp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintVertical_bias="0.94"
+            android:gravity="center" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintHorizontal_bias="0.498" android:textColor="#000000"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

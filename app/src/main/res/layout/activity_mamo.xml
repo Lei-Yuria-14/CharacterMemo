@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="match_parent">
+
+    <ScrollView
+            android:layout_width="0dp"
+            android:id="@+id/scrollView"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_height="0dp" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintHorizontal_bias="0.0" app:layout_constraintVertical_bias="1.0">
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:orientation="vertical" android:visibility="visible"
+                      android:layout_gravity="center_horizontal" android:layout_margin="12dp">
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp" app:srcCompat="@drawable/character_information"
+                    android:id="@+id/imageView2"/>
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent" android:layout_weight="0.7">
+                    <TextView
+                            android:text="名前"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" android:id="@+id/editnameText"
+                    />
+                    <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:theme="@style/EditTextTheme"
+                            android:inputType="textPersonName"
+                            android:ems="10"
+                            android:id="@+id/editNameText" android:hint="宮野 らいか"/>
+                </LinearLayout>
+                <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent" android:layout_weight="0.3">
+                    <TextView
+                            android:text="性別"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" android:id="@+id/genderText"
+                    />
+                    <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:theme="@style/EditTextTheme"
+                            android:inputType="textPersonName"
+                            android:ems="10"
+                            android:id="@+id/editGenderText" android:hint="女"/>
+                </LinearLayout>
+            </LinearLayout>
+            <TextView
+                    android:text="ニックネーム"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:id="@+id/nicknameText"/>
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/EditTextTheme"
+                    android:inputType="textPersonName"
+                    android:ems="10"
+                    android:id="@+id/editNicknameText" android:hint="らいちゃん，らいか姉ちゃん"/>
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent" android:layout_weight="0.5">
+                    <TextView
+                            android:text="役職"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" android:id="@+id/positionText"
+                    />
+                    <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:theme="@style/EditTextTheme"
+                            android:inputType="textPersonName"
+                            android:ems="10"
+                            android:id="@+id/editPositionText" android:hint="主人公"/>
+                </LinearLayout>
+                <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent" android:layout_weight="0.5">
+                    <TextView
+                            android:text="職業"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" android:id="@+id/jobText"/>
+                    <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:theme="@style/EditTextTheme"
+                            android:inputType="textPersonName"
+                            android:ems="10"
+                            android:id="@+id/editJobText" android:hint="中学2年生"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent" android:layout_weight="1">
+                    <TextView
+                            android:text="血液型"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" android:id="@+id/bloodtypeText"
+                    />
+                    <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:theme="@style/EditTextTheme"
+                            android:inputType="textPersonName"
+                            android:ems="10"
+                            android:id="@+id/editBloodtypeText" android:hint="AB型"/>
+                </LinearLayout>
+                <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent" android:layout_weight="1">
+                    <TextView
+                            android:text="年齢"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" android:id="@+id/ageText"/>
+                    <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:theme="@style/EditTextTheme"
+                            android:inputType="textPersonName"
+                            android:ems="10"
+                            android:id="@+id/editAgeText" android:hint="14歳"/>
+                </LinearLayout>
+                <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent" android:layout_weight="1">
+                    <TextView
+                            android:text="誕生日"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" android:id="@+id/birthdayText"
+                    />
+                    <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:theme="@style/EditTextTheme"
+                            android:inputType="textPersonName"
+                            android:ems="10"
+                            android:id="@+id/editBirthdayText" android:hint="8月2日"/>
+                </LinearLayout>
+            </LinearLayout>
+            <TextView
+                    android:text="能力・スキル（個性）"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:id="@+id/abilityText"/>
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/EditTextTheme"
+                    android:inputType="textPersonName"
+                    android:ems="10"
+                    android:id="@+id/editAbilityText" android:hint="特になし"/>
+            <TextView
+                    android:text="一人称"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:id="@+id/firstPersonText"/>
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/EditTextTheme"
+                    android:inputType="textPersonName"
+                    android:ems="10"
+                    android:id="@+id/editFirstPersonText" android:hint="私"/>
+            <TextView
+                    android:text="好きなもの（食べ物など）"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:id="@+id/favoriteText"/>
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/EditTextTheme"
+                    android:inputType="textPersonName"
+                    android:ems="10"
+                    android:id="@+id/editFavoriteText" android:hint="自然，ペットのハリネズミ"/>
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent" android:layout_weight="0.5">
+                    <TextView
+                            android:text="身長"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" android:id="@+id/heightText"
+                            android:layout_weight="1"/>
+                    <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:theme="@style/EditTextTheme"
+                            android:inputType="textPersonName"
+                            android:ems="10"
+                            android:id="@+id/editHeightText" android:hint="149.5㎝" android:layout_weight="1"/>
+                </LinearLayout>
+                <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent" android:layout_weight="0.5">
+                    <TextView
+                            android:text="体重"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" android:id="@+id/weightText"
+                            android:layout_weight="1"/>
+                    <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:theme="@style/EditTextTheme"
+                            android:inputType="textPersonName"
+                            android:ems="10"
+                            android:id="@+id/editWeightText" android:layout_weight="1" android:hint="38.8㎏"/>
+                </LinearLayout>
+            </LinearLayout>
+            <TextView
+                    android:text="声優・俳優"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:id="@+id/voiceText"/>
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:theme="@style/EditTextTheme"
+                    android:ems="10"
+                    android:id="@+id/editVoiceText" android:hint="募集中です！"/>
+            <TextView
+                    android:text="性格"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:id="@+id/personalityText"/>
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/EditTextTheme"
+                    android:inputType="textPersonName"
+                    android:ems="10"
+                    android:id="@+id/editPersonalityText" android:hint="天然，感情が豊か"/>
+            <TextView
+                    android:text="特技"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:id="@+id/specialSkillText"/>
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/EditTextTheme"
+                    android:inputType="textPersonName"
+                    android:ems="10"
+                    android:id="@+id/editSpecialSkillText" android:hint="未定（考え中…）"/>
+            <TextView
+                    android:text="初登場シーン"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:id="@+id/sceneText"/>
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/EditTextTheme"
+                    android:inputType="textPersonName"
+                    android:ems="10"
+                    android:id="@+id/editSceneText" android:hint="第一章" android:gravity="bottom"/>
+            <TextView
+                    android:text="外見"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:id="@+id/appearanceText"/>
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/EditTextTheme"
+                    android:inputType="textMultiLine"
+                    android:id="@+id/editAppearanceText" android:hint="ショートボブ，右耳に絆創膏をしている" android:gravity="bottom"
+                    android:ems="10" android:lines="3"/>
+            <TextView
+                    android:text="生い立ち"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:id="@+id/upbringText"/>
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/EditTextTheme"
+                    android:inputType="textMultiLine"
+                    android:id="@+id/editUpbringText" android:hint="5歳の時に宮野 絢に拾われ育つ" android:lines="3"
+                    android:gravity="bottom"/>
+            <TextView
+                    android:text="この人物の発言"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:id="@+id/remarkText"/>
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/EditTextTheme"
+                    android:inputType="textMultiLine"
+                    android:id="@+id/editRemarkText" android:hint="「悲しい音がする。」" android:lines="3"
+                    android:gravity="bottom"/>
+            <TextView
+                    android:text="作中では表さない部分（推測させる部分）"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:id="@+id/writeText"/>
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/EditTextTheme"
+                    android:inputType="textMultiLine"
+                    android:ems="10"
+                    android:id="@+id/editWriteText" android:hint="身長体重" android:lines="3" android:gravity="bottom"/>
+            <TextView
+                    android:text="備考"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:id="@+id/otherText"/>
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/EditTextTheme"
+                    android:inputType="textMultiLine"
+                    android:ems="10"
+                    android:id="@+id/editOtherText" android:hint="隔週で親と日本各地に旅行に行っている" android:lines="3"
+                    android:gravity="bottom"/>
+            <Button
+                    android:text="SAVE"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/saveButton" android:textSize="18sp"
+                    app:layout_constraintTop_toBottomOf="@+id/editOtherText"
+                    app:layout_constraintStart_toStartOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginLeft="30dp" android:layout_marginStart="30dp" android:layout_marginRight="30dp"
+                    android:layout_marginEnd="30dp" android:layout_marginTop="30dp" android:layout_marginBottom="30dp"
+                    android:background="@drawable/green_circle"/>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
