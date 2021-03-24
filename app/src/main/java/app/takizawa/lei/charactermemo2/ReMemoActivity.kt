@@ -58,7 +58,8 @@ class ReMemoActivity : AppCompatActivity() {
         "真面目",
         "不真面目",
         "熱血",
-        "クール"
+        "クール",
+        "未定"
     )
 
     override  fun onCreate(savedInstanceState: Bundle?) {
