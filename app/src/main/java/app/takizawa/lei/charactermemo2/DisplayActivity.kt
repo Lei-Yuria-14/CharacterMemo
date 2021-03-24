@@ -44,8 +44,8 @@ class DisplayActivity : AppCompatActivity() {
 
             nameDisText.text = character.name
             nicknameDisText.text = character.nickname
-            ageDisText.text = character.age + "歳"
-            bloodtypeDisText.text = character.bloodType + "型"
+            ageDisText.text = character.age
+            bloodtypeDisText.text = character.bloodType
             birthdayDisText.text = character.birthday
             voiceDisText.text = character.voice
             jobDisText.text = character.job

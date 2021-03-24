@@ -15,13 +15,50 @@ class ReMemoActivity : AppCompatActivity() {
     }
 
     private val positionItems: Array<String> = arrayOf(
-        "ヒーロー1（主人公）",
+        "ヒーロー（主人公）",
         "メンター（賢者）",
         "ガーディアン（門番）",
         "ヘラルド（使者）",
         "シェイプシフター（変化者）",
         "シャドウ（悪者）",
-        "トリックスター（道化師）"
+        "トリックスター（道化師）",
+        "未定"
+    )
+
+    private val genderItems: Array<String> = arrayOf(
+        "女性",
+        "男性",
+        "不定",
+        "未定"
+    )
+
+    private val bloodTypeItems: Array<String> = arrayOf(
+        "A型",
+        "B型",
+        "O型",
+        "AB型",
+        "未定"
+    )
+
+    private val personalityItems: Array<String> = arrayOf(
+        "楽天的",
+        "悲観的",
+        "強気（積極的）",
+        "弱気（消極的）",
+        "温和",
+        "粗暴",
+        "冷徹",
+        "合理的",
+        "感情的",
+        "活発",
+        "大人しい",
+        "非常識的",
+        "支配的",
+        "従属的",
+        "真面目",
+        "不真面目",
+        "熱血",
+        "クール"
     )
 
     override  fun onCreate(savedInstanceState: Bundle?) {
@@ -30,14 +67,14 @@ class ReMemoActivity : AppCompatActivity() {
 
         //MainActivityから値を受けとる
         val name = intent.getStringExtra("NAME")
-        editNameText.setText(name)
+        editNameText.editText?.setText(name)
 
         //既に保存されているデータを取得してmemoに代入
         val memo: CharacterData? = read(name as String)
 
         if (memo != null) {
-            editNameText.setText(memo.name)
-            editGenderText.setText(memo.gender)
+            editNameText.editText?.setText(memo.name)
+            editGenderText.editText?.setText(memo.gender)
             editNicknameText.setText(memo.nickname)
             editPositionText.setText(memo.position)
             editJobText.setText(memo.job)
@@ -69,8 +106,8 @@ class ReMemoActivity : AppCompatActivity() {
         saveButton.setOnClickListener {
             update(name.toString())
 
-            val name: String = editNameText.text.toString()
-            val gender: String = editGenderText.text.toString()
+            val name: String = editNameText.editText?.text.toString()
+            val gender: String = editGenderText.editText?.text.toString()
             val nickname: String = editNicknameText.text.toString()
             val position: String = editPositionText.text.toString()
             val job: String = editJobText.text.toString()
@@ -112,8 +149,8 @@ class ReMemoActivity : AppCompatActivity() {
             val character = realm.where(CharacterData::class.java).equalTo("name", name).findFirst()
                 ?: return@executeTransaction
 
-            editNameText.setText(character.name)
-            editGenderText.setText(character.gender)
+            editNameText.editText?.setText(character.name)
+            editGenderText.editText?.setText(character.gender)
             editNicknameText.setText(character.nickname)
             editPositionText.setText(character.position)
             editJobText.setText(character.job)
@@ -142,8 +179,8 @@ class ReMemoActivity : AppCompatActivity() {
             val character = realm.where(CharacterData::class.java).equalTo("name", name).findFirst()
                 ?: return@executeTransaction
 
-            character.name = editNameText.text.toString()
-            character.gender = editGenderText.text.toString()
+            character.name = editNameText.editText?.text.toString()
+            character.gender = editGenderText.editText?.text.toString()
             character.nickname = editNicknameText.text.toString()
             character.position = editPositionText.text.toString()
             character.job = editJobText.text.toString()

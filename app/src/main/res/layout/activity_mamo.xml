@@ -18,45 +18,39 @@
                     android:layout_width="wrap_content"
                     android:layout_height="100dp" app:srcCompat="@drawable/character_information"
                     android:id="@+id/imageView2"/>
+
+
             <LinearLayout
                     android:orientation="horizontal"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
-                <LinearLayout
-                        android:orientation="vertical"
+
+                <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/editNameText"
                         android:layout_width="0dp"
-                        android:layout_height="match_parent" android:layout_weight="0.7">
-                    <TextView
-                            android:text="名前"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.7"
+                        android:hint="名前"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                    <com.google.android.material.textfield.TextInputEditText
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content" android:id="@+id/editnameText"
-                    />
-                    <EditText
+                            android:layout_height="wrap_content" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/editGenderText"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.3"
+                        android:hint="gender"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                    <com.google.android.material.textfield.TextInputEditText
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:theme="@style/EditTextTheme"
-                            android:inputType="textPersonName"
-                            android:ems="10"
-                            android:id="@+id/editNameText" android:hint="宮野 らいか"/>
-                </LinearLayout>
-                <LinearLayout
-                        android:orientation="vertical"
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent" android:layout_weight="0.3">
-                    <TextView
-                            android:text="性別"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content" android:id="@+id/genderText"
                     />
-                    <EditText
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:theme="@style/EditTextTheme"
-                            android:inputType="textPersonName"
-                            android:ems="10"
-                            android:id="@+id/editGenderText" android:hint="女"/>
-                </LinearLayout>
+                </com.google.android.material.textfield.TextInputLayout>
             </LinearLayout>
+
             <TextView
                     android:text="ニックネーム"
                     android:layout_width="match_parent"
