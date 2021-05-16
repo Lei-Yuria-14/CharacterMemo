@@ -25,42 +25,6 @@ class ReMemoActivity : AppCompatActivity() {
         "未定"
     )
 
-    private val genderItems: Array<String> = arrayOf(
-        "女性",
-        "男性",
-        "不定",
-        "未定"
-    )
-
-    private val bloodTypeItems: Array<String> = arrayOf(
-        "A型",
-        "B型",
-        "O型",
-        "AB型",
-        "未定"
-    )
-
-    private val personalityItems: Array<String> = arrayOf(
-        "楽天的",
-        "悲観的",
-        "強気（積極的）",
-        "弱気（消極的）",
-        "温和",
-        "粗暴",
-        "冷徹",
-        "合理的",
-        "感情的",
-        "活発",
-        "大人しい",
-        "非常識的",
-        "支配的",
-        "従属的",
-        "真面目",
-        "不真面目",
-        "熱血",
-        "クール",
-        "未定"
-    )
 
     override  fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
