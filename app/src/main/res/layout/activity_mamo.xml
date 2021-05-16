@@ -14,7 +14,8 @@
             app:layout_constraintHorizontal_bias="0.0" app:layout_constraintVertical_bias="1.0">
         <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
                 android:orientation="vertical" android:visibility="visible"
-                android:layout_gravity="center_horizontal" android:layout_margin="12dp">
+                android:layout_gravity="center_horizontal" android:layout_margin="12dp"
+                android:theme="@style/Theme.MaterialComponents.DayNight.DarkActionBar">
             <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="100dp" app:srcCompat="@drawable/character_information"
@@ -31,302 +32,289 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="0.7"
-                        android:hint="名前"
+                        android:layout_margin="8dp"
+                        android:hint="NAME"
                         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
-
                     <com.google.android.material.textfield.TextInputEditText
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content" />
                 </com.google.android.material.textfield.TextInputLayout>
+
                 <com.google.android.material.textfield.TextInputLayout
                         android:id="@+id/editGenderText"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="0.3"
-                        android:hint="gender"
+                        android:layout_margin="8dp"
+                        android:hint="GENDER"
                         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
                     <com.google.android.material.textfield.TextInputEditText
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            />
+                            android:layout_height="wrap_content" />
                 </com.google.android.material.textfield.TextInputLayout>
             </LinearLayout>
 
-            <TextView
-                    android:text="ニックネーム"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content" android:id="@+id/nicknameText"/>
-            <EditText
+            <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/editNicknameText"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:theme="@style/EditTextTheme"
-                    android:inputType="textPersonName"
-                    android:ems="10"
-                    android:id="@+id/editNicknameText" android:hint="らいちゃん，らいか姉ちゃん"/>
+                    android:layout_margin="8dp"
+                    android:hint="NICKNAME"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+            </com.google.android.material.textfield.TextInputLayout>
+
             <LinearLayout
                     android:orientation="horizontal"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
-                <LinearLayout
-                        android:orientation="vertical"
+                <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/editPositionText"
                         android:layout_width="0dp"
-                        android:layout_height="match_parent" android:layout_weight="0.5">
-                    <TextView
-                            android:text="役職"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:layout_margin="8dp"
+                        android:hint="POSITION"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                    <com.google.android.material.textfield.TextInputEditText
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content" android:id="@+id/positionText"
-                            />
-                    <EditText
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:theme="@style/EditTextTheme"
-                            android:inputType="textPersonName"
-                            android:ems="10"
-                            android:id="@+id/editPositionText" android:hint="主人公"/>
-                </LinearLayout>
-                <LinearLayout
-                        android:orientation="vertical"
+                            android:layout_height="wrap_content" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/editJobText"
                         android:layout_width="0dp"
-                        android:layout_height="match_parent" android:layout_weight="0.5">
-                    <TextView
-                            android:text="職業"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:layout_margin="8dp"
+                        android:hint="JOB"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                    <com.google.android.material.textfield.TextInputEditText
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content" android:id="@+id/jobText"/>
-                    <EditText
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:theme="@style/EditTextTheme"
-                            android:inputType="textPersonName"
-                            android:ems="10"
-                            android:id="@+id/editJobText" android:hint="中学2年生"/>
-                </LinearLayout>
+                            android:layout_height="wrap_content" />
+                </com.google.android.material.textfield.TextInputLayout>
             </LinearLayout>
+
             <LinearLayout
                     android:orientation="horizontal"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
-                <LinearLayout
-                        android:orientation="vertical"
+                <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/editBloodtypeText"
                         android:layout_width="0dp"
-                        android:layout_height="match_parent" android:layout_weight="1">
-                    <TextView
-                            android:text="血液型"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.3"
+                        android:layout_margin="8dp"
+                        android:hint="BLOOD TYPE"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                    <com.google.android.material.textfield.TextInputEditText
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content" android:id="@+id/bloodtypeText"
-                            />
-                    <EditText
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:theme="@style/EditTextTheme"
-                            android:inputType="textPersonName"
-                            android:ems="10"
-                            android:id="@+id/editBloodtypeText" android:hint="AB型"/>
-                </LinearLayout>
-                <LinearLayout
-                        android:orientation="vertical"
+                            android:layout_height="wrap_content" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/editAgeText"
                         android:layout_width="0dp"
-                        android:layout_height="match_parent" android:layout_weight="1">
-                    <TextView
-                            android:text="年齢"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.3"
+                        android:layout_margin="8dp"
+                        android:hint="AGE"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                    <com.google.android.material.textfield.TextInputEditText
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content" android:id="@+id/ageText"/>
-                    <EditText
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:theme="@style/EditTextTheme"
-                            android:inputType="textPersonName"
-                            android:ems="10"
-                            android:id="@+id/editAgeText" android:hint="14歳"/>
-                </LinearLayout>
-                <LinearLayout
-                        android:orientation="vertical"
+                            android:layout_height="wrap_content" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/editBirthdayText"
                         android:layout_width="0dp"
-                        android:layout_height="match_parent" android:layout_weight="1">
-                    <TextView
-                            android:text="誕生日"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.3"
+                        android:layout_margin="8dp"
+                        android:hint="BIRTHDAY"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                    <com.google.android.material.textfield.TextInputEditText
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content" android:id="@+id/birthdayText"
-                            />
-                    <EditText
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:theme="@style/EditTextTheme"
-                            android:inputType="textPersonName"
-                            android:ems="10"
-                            android:id="@+id/editBirthdayText" android:hint="8月2日"/>
-                </LinearLayout>
+                            android:layout_height="wrap_content" />
+                </com.google.android.material.textfield.TextInputLayout>
             </LinearLayout>
-            <TextView
-                    android:text="能力・スキル（個性）"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content" android:id="@+id/abilityText"/>
-            <EditText
+
+            <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/editAbilityText"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:theme="@style/EditTextTheme"
-                    android:inputType="textPersonName"
-                    android:ems="10"
-                    android:id="@+id/editAbilityText" android:hint="特になし"/>
-            <TextView
-                    android:text="一人称"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content" android:id="@+id/firstPersonText"/>
-            <EditText
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:theme="@style/EditTextTheme"
-                    android:inputType="textPersonName"
-                    android:ems="10"
-                    android:id="@+id/editFirstPersonText" android:hint="私"/>
-            <TextView
-                    android:text="好きなもの（食べ物など）"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content" android:id="@+id/favoriteText"/>
-            <EditText
+                    android:layout_margin="8dp"
+                    android:hint="ABILITY"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/editFirstPersonText"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:theme="@style/EditTextTheme"
-                    android:inputType="textPersonName"
-                    android:ems="10"
-                    android:id="@+id/editFavoriteText" android:hint="自然，ペットのハリネズミ"/>
+                    android:layout_margin="8dp"
+                    android:hint="FIRST PERSON"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/editFavoriteText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:hint="FAVORITE THING"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+            </com.google.android.material.textfield.TextInputLayout>
+
             <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
-                <LinearLayout
-                        android:orientation="vertical"
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent" android:layout_weight="0.5">
-                    <TextView
-                            android:text="身長"
+                <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/editHeightText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:layout_margin="8dp"
+                        android:hint="HEIGHT"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                    <com.google.android.material.textfield.TextInputEditText
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content" android:id="@+id/heightText"
-                            android:layout_weight="1"/>
-                    <EditText
+                            android:layout_height="wrap_content" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/editWeightText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:layout_margin="8dp"
+                        android:hint="WEIGHT"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                    <com.google.android.material.textfield.TextInputEditText
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:theme="@style/EditTextTheme"
-                            android:inputType="textPersonName"
-                            android:ems="10"
-                            android:id="@+id/editHeightText" android:hint="149.5㎝" android:layout_weight="1"/>
-                </LinearLayout>
-                <LinearLayout
-                        android:orientation="vertical"
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent" android:layout_weight="0.5">
-                    <TextView
-                            android:text="体重"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content" android:id="@+id/weightText"
-                            android:layout_weight="1"/>
-                    <EditText
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:theme="@style/EditTextTheme"
-                            android:inputType="textPersonName"
-                            android:ems="10"
-                            android:id="@+id/editWeightText" android:layout_weight="1" android:hint="38.8㎏"/>
-                </LinearLayout>
+                            android:layout_height="wrap_content" />
+                </com.google.android.material.textfield.TextInputLayout>
             </LinearLayout>
-            <TextView
-                    android:text="声優・俳優"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content" android:id="@+id/voiceText"/>
-            <EditText
+
+            <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/editVoiceText"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:inputType="textPersonName"
-                    android:theme="@style/EditTextTheme"
-                    android:ems="10"
-                    android:id="@+id/editVoiceText" android:hint="募集中です！"/>
-            <TextView
-                    android:text="性格"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content" android:id="@+id/personalityText"/>
-            <EditText
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:theme="@style/EditTextTheme"
-                    android:inputType="textPersonName"
-                    android:ems="10"
-                    android:id="@+id/editPersonalityText" android:hint="天然，感情が豊か"/>
-            <TextView
-                    android:text="特技"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content" android:id="@+id/specialSkillText"/>
-            <EditText
+                    android:layout_margin="8dp"
+                    android:hint="ACTOR or VOICE"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/editPersonalityText"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:theme="@style/EditTextTheme"
-                    android:inputType="textPersonName"
-                    android:ems="10"
-                    android:id="@+id/editSpecialSkillText" android:hint="未定（考え中…）"/>
-            <TextView
-                    android:text="初登場シーン"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content" android:id="@+id/sceneText"/>
-            <EditText
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:theme="@style/EditTextTheme"
-                    android:inputType="textPersonName"
-                    android:ems="10"
-                    android:id="@+id/editSceneText" android:hint="第一章" android:gravity="bottom"/>
-            <TextView
-                    android:text="外見"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content" android:id="@+id/appearanceText"/>
-            <EditText
+                    android:layout_margin="8dp"
+                    android:hint="PERSONALITY"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/editSpecialSkillText"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:theme="@style/EditTextTheme"
-                    android:inputType="textMultiLine"
-                    android:id="@+id/editAppearanceText" android:hint="ショートボブ，右耳に絆創膏をしている" android:gravity="bottom"
-                    android:ems="10" android:lines="3"/>
-            <TextView
-                    android:text="生い立ち"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content" android:id="@+id/upbringText"/>
-            <EditText
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:theme="@style/EditTextTheme"
-                    android:inputType="textMultiLine"
-                    android:id="@+id/editUpbringText" android:hint="5歳の時に宮野 絢に拾われ育つ" android:lines="3"
-                    android:gravity="bottom"/>
-            <TextView
-                    android:text="この人物の発言"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content" android:id="@+id/remarkText"/>
-            <EditText
+                    android:layout_margin="8dp"
+                    android:hint="SPECIAL SKILL"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/editSceneText"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:theme="@style/EditTextTheme"
-                    android:inputType="textMultiLine"
-                    android:id="@+id/editRemarkText" android:hint="「悲しい音がする。」" android:lines="3"
-                    android:gravity="bottom"/>
-            <TextView
-                    android:text="作中では表さない部分（推測させる部分）"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content" android:id="@+id/writeText"/>
-            <EditText
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:theme="@style/EditTextTheme"
-                    android:inputType="textMultiLine"
-                    android:ems="10"
-                    android:id="@+id/editWriteText" android:hint="身長体重" android:lines="3" android:gravity="bottom"/>
-            <TextView
-                    android:text="備考"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content" android:id="@+id/otherText"/>
-            <EditText
+                    android:layout_margin="8dp"
+                    android:hint="FIRST SCENE"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/editAppearanceText"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:theme="@style/EditTextTheme"
-                    android:inputType="textMultiLine"
-                    android:ems="10"
-                    android:id="@+id/editOtherText" android:hint="隔週で親と日本各地に旅行に行っている" android:lines="3"
-                    android:gravity="bottom"/>
+                    android:layout_margin="8dp"
+                    android:hint="APPERANCE"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/editUpbringText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:hint="UPBRING"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/editRemarkText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:hint="REMARK"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/editWriteText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:hint="GUESS PART"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/editOtherText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:hint="OTHER THING"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+            </com.google.android.material.textfield.TextInputLayout>
+
             <Button
                     android:text="SAVE"
                     android:layout_width="300dp"
